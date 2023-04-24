@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Form spedizione</title>
+</head>
+<body>
+<form id="delivery" autocomplete="on">
+
+    <label for="name">Nome*</label>
+    <input id="name" type="text" name="name" placeholder="Nome" required>
+
+    <label for="lastname">Cognome</label>
+    <input id="lastname" type="text" name="lastname" placeholder="Cognome" required>
+
+    <label for="address">Indirizzo</label>
+    <input id="address" type="text" name="address" placeholder="Indirizzo" required>
+
+    <label for="po">Civico</label>
+    <input id="po" type="text" name="po" placeholder="Civico" required>
+
+    <label for="cap">Cap</label>
+    <input type="number" id="cap" name="Cap" placeholder="Cap" required>
+
+    <label for="city">Città</label>
+    <input type="text" id="city" name="Città" required>
+
+    <label for="province">Provincia</label>
+    <select name="province" id="province" required>
+        <option value="MI">MILANO</option>
+        <option value="BG">BERGAMO</option>
+        <option value="CT">CATANIA</option>
+        <option value="PA">PALERMO</option>
+    </select>
+
+    <label for="country">Nazione</label>
+    <input id="country" type="text" name="Nazione" placeholder="Nazione" required>
+
+    <label for="phone">Telefono</label>
+    <input type="tel" name="phone" id="phone">
+
+    <label for="email">Email</label>
+    <input type="email" name="Email" id="email" placeholder="example@gmail.com" required>
+
+    <label for="note">Note</label>
+    <textarea id="note" name="Note" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Invia">
+</form>
+
+<button type="reset" form="delivery">Reset</button>
+
+
+</body>
+</html>
